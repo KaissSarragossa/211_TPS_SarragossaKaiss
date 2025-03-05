@@ -1,6 +1,6 @@
 import './profilecontent.css'
 
-function ProfileContent() {
+function ProfileContent(prop) {
   return (
     <>
         <div class="profile">
@@ -9,13 +9,13 @@ function ProfileContent() {
                 <h1 class="profile-user-name">Jane Doe</h1>
             </div>
             <div class="profile-bio">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️</p>
+                <p>{prop.bio}</p>
             </div>
             <div class="profile-stats">
                 <ul>
-                    <li>4 posts</li>
-                    <li>188 followers</li>
-                    <li>206 following</li>
+                    <li>{prop.post} post</li>
+                    <li>{prop.followers} followers</li>
+                    <li>{prop.following} following</li>
                 </ul>
             </div>
         </div>

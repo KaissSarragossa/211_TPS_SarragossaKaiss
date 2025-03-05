@@ -6,8 +6,13 @@ import MainComponent from './components/MainComponent'
 function App() {
   return (
     <>
-      <Header/>
-      <MainComponent/>
+      <head>
+        <title>My Social</title>
+      </head>
+      <body>
+        <Header/>
+        <MainComponent/>
+      </body>
     </>
   )
 }
