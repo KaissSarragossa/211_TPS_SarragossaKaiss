@@ -5,8 +5,8 @@ function ProfileContent(prop) {
     <>
         <div class="profile">
             <div class="profile-name-image">
-                <img src="https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" alt=""/>
-                <h1 class="profile-user-name">Jane Doe</h1>
+                <img src={prop.profileimage} alt=""/>
+                <h1 class="profile-user-name">{prop.nom}</h1>
             </div>
             <div class="profile-bio">
                 <p>{prop.bio}</p>
@@ -23,4 +23,4 @@ function ProfileContent(prop) {
   )
 }
 
-export default ProfileContent
+export default ProfileContent;

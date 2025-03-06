@@ -1,31 +1,41 @@
 import CardList from './CardList.jsx'
 import './maincomponent.css'
 import ProfileContent from './ProfileContent'
-import cardlist from './cardlist.js'
-
+import cards from './cards.js'
+import profile from './profile.js'
 
 function mainComponent() {
 
-  const cardElelemts = cardlist.map(card =>{
+  const cardElelemts = cards.map(element =>{
     return<CardList 
-        id={card.id}
-        image={card.image}
-        titre={card.titre_carte}
-        description={card.description}
+        id={element.id}
+        image={element.image}
+        titre_carte={element.titre_carte}
+        description={element.description}
+    />
+})
+
+  const profilElements = profile.map(element =>{
+    return<ProfileContent
+        profileimage={element.profileimage}
+        nom={element.nom}
+        bio={element.bio}
+        post={element.post}
+        followers={element.followers}
+        following={element.following}
     />
 })
 
   return (
     <>
       <main>
-        <ProfileContent bio="Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️" post="4" followers="188" following="206"/>
+        {profilElements}
         <ul class="card-list">
           {cardElelemts}
         </ul>
       </main>
-        
     </>
   )
 }
 
-export default mainComponent
+export default mainComponent;

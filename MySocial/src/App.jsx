@@ -1,20 +1,16 @@
 import './App.css'
 import Header from './components/Header'
 import MainComponent from './components/MainComponent'
-
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
-      <head>
-        <title>My Social</title>
-      </head>
-      <body>
-        <Header/>
-        <MainComponent/>
-      </body>
+    <>     
+      <Header/>
+      <MainComponent/>
+      <Footer/>
     </>
   )
 }
 
-export default App
+export default App;

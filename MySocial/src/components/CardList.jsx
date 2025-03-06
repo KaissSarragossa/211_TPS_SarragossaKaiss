@@ -13,4 +13,4 @@ function CardList(prop) {
 );
 }
 
-export default CardList
+export default CardList;
