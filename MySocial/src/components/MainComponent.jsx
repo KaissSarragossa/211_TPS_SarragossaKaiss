@@ -1,28 +1,22 @@
-import CardList from './CardList.jsx'
+import CardList from './Card.jsx'
 import './maincomponent.css'
 import ProfileContent from './ProfileContent'
 import cards from './cards.js'
-import profile from './profile.js'
+
 
 function mainComponent() {
-
-
-  const profilElements = profile.map(element =>{
-    return<ProfileContent
-        profileimage={element.profileimage}
-        nom={element.nom}
-        bio={element.bio}
-        post={element.post}
-        followers={element.followers}
-        following={element.following}
-    />
-})
-
   return (
     <>
       <main>
-        {profilElements}
-        <CardList/>
+        <ProfileContent 
+            bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 📷✈️🏕️"  
+            profileimage = "https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces" 
+            nom = "Jane Doe" 
+            post = {cards.length}
+            followers = "188"
+            following = "206"
+        />
+        <CardList cards = {cards}/>
       </main>
     </>
   )

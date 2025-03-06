@@ -1,4 +1,5 @@
 import './profilecontent.css'
+import cards from './cards.js';
 
 function ProfileContent(prop) {
   return (
