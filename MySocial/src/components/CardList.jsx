@@ -1,16 +1,23 @@
 import './cardlist.css'
+import cards from './cards.js'
 
-function CardList(prop) {
+function CardList() {
 
-  return (          
-        <li class="card" >
-            <img class="card-image" src={prop.image} alt={prop.titre_carte} />
-            <div class="card-description">
-                <h2>{prop.titre_carte}</h2>
-                <p>{prop.description}</p>
-            </div>
-        </li>
-);
+const cardElelemts = cards.map(element =>{
+    return<CardList 
+        id={element.id}
+        image={element.image}
+        titre_carte={element.titre_carte}
+        description={element.description}
+    />
+})
+
+return (
+    <>
+        <ul class="card-list">
+          {cardElelemts}
+        </ul>
+    </>
+  )
 }
-
 export default CardList;

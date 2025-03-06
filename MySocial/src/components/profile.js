@@ -1,6 +1,6 @@
 import cards from "./cards";
 
-const profile = [
+const profile = 
     {
         profileimage : "https://images.unsplash.com/photo-1513721032312-6a18a42c8763?w=152&h=152&fit=crop&crop=faces",
         nom : "Jane Doe",
@@ -10,7 +10,7 @@ const profile = [
         following : "206",
     }
 
-];
+;
 
 export default profile;
 

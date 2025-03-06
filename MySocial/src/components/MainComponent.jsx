@@ -6,14 +6,6 @@ import profile from './profile.js'
 
 function mainComponent() {
 
-  const cardElelemts = cards.map(element =>{
-    return<CardList 
-        id={element.id}
-        image={element.image}
-        titre_carte={element.titre_carte}
-        description={element.description}
-    />
-})
 
   const profilElements = profile.map(element =>{
     return<ProfileContent
@@ -30,9 +22,7 @@ function mainComponent() {
     <>
       <main>
         {profilElements}
-        <ul class="card-list">
-          {cardElelemts}
-        </ul>
+        <CardList/>
       </main>
     </>
   )
