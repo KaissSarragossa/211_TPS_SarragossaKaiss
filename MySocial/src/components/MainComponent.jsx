@@ -1,4 +1,4 @@
-import CardList from './Card.jsx'
+import CardList from './CardList.jsx'
 import './maincomponent.css'
 import ProfileContent from './ProfileContent'
 import cards from './cards.js'
@@ -16,6 +16,7 @@ function mainComponent() {
             followers = "188"
             following = "206"
         />
+        
         <CardList cards = {cards}/>
       </main>
     </>

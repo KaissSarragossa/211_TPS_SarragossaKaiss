@@ -1,20 +1,21 @@
-
 import Card from './Card.jsx'
+
 function CardList(props) {
 
-    const cardElelemts = props.cards.map(card =>{
+    const cardElements = props.cards.map(card =>{
         return<Card 
-            id={card.id}
+            key={card.id}
             image={card.image}
             titre={card.titre_carte}
             description={card.description}
         />
     });
     return(
-       <ul class="card-list">
-          {cardElelemts}
+        <ul class="card-list">
+            {cardElements}
         </ul> 
-    )
+       
+    );
     
   }
   export default CardList;

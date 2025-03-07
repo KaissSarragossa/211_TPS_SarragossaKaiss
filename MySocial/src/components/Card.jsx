@@ -1,13 +1,13 @@
 import './cardlist.css'
 
-function Card(prop) {
+function Card(props) {
 
   return (          
         <li class="card" >
-            <img class="card-image" src={prop.image} alt={prop.titre} />
+            <img class="card-image" src={props.image} alt={props.titre}/>
             <div class="card-description">
-                <h2>{prop.titre}</h2>
-                <p>{prop.description}</p>
+                <h2>{props.titre}</h2>
+                <p>{props.description}</p>
             </div>
         </li>
   );
