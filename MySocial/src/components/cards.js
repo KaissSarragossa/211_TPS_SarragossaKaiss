@@ -1,7 +1,7 @@
 const cards = [
     {
         id : 1,
-        image : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/psychopomp-500.jpg",
+        image : "../images/code.jpg",
         titre_carte : "Psychopomp",
         description : "Japanese Breakfast"
     },
@@ -22,9 +22,9 @@ const cards = [
 
     {
         id : 4,
-        image : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/jane-doe-500.jpg",
-        titre_carte : "Jane Doe",
-        description : "Converge"
+        image : "https://cdn.animenewsnetwork.com/thumbnails/max500x600/encyc/A30590-2116028428.1741701795.jpg",
+        titre_carte : "Hanako-kun",
+        description : "Vulfpeck"
     }
 ];
 
