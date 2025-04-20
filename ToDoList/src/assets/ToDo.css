@@ -13,7 +13,7 @@
     display: flex;
     gap: 8px;
 }
-.done-button, .delete-button {
+.done-button, .delete-button{
     padding: 6px 10px;
     border: none;
     color: white;

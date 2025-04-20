@@ -1,30 +1,28 @@
 import '../assets/ToDoForm.css'
-import ToDoList from './ToDoList';
 
-function TodoForm(props) {
 
-    function addToDo(formData) {
-        const textToDo = formData.get("addToDo")
-        alert(textToDo)
+function ToDoForm({ onAdd }) {
+  function submit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const text = formData.get("addToDo").trim();
+    if (text !== "") {
+      onAdd(text);
+      event.target.reset();
     }
+  }
 
-    return (
-       <div className="container">
-            <h1>Todo List</h1>
-            <form action={addToDo} className="todo-input">
-                <input 
-                    type="addToDo"
-                    id='addToDo'
-                    name='addToDo'
-                    placeholder="Add a new task..."
-                />
-                <button>Ajouter</button>
-            </form>
-            <ToDoList/>
-        </div>
+  return (
+    <form onSubmit={submit} className="todo-input">
+      <input
+        type="text"
+        id="addToDo"
+        name="addToDo"
+        placeholder="Add a new task..."
+      />
+      <button type="submit">Ajouter</button>
+    </form>
+  );
+}
 
-    );
-  } 
-  
-  export default TodoForm;
-  
+export default ToDoForm;
