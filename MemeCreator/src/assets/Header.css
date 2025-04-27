@@ -1,11 +1,18 @@
 .Header {
-    width: 100%; /* Prend toute la largeur */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh; /* Ajustable selon vos besoins */
-    background-color: #333;
-    color: white;
-    font-size: 1.5em;
+width: 100%;
+background-color: #6e514f;
+padding: 20px 0;
+text-align: center;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+position: sticky;
+top: 0;
+z-index: 100;
+margin: 0;
 }
 
+.headerh1 {
+font-size: 2.5rem;
+color: white;
+margin: 0;
+text-shadow: 2px 2px 4px black;
+}
