@@ -1,0 +1,11 @@
+.Header {
+    width: 100%; /* Prend toute la largeur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Ajustable selon vos besoins */
+    background-color: #333;
+    color: white;
+    font-size: 1.5em;
+}
+

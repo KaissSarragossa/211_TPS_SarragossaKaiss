@@ -1,0 +1,8 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Ajuste la hauteur ici aussi */
+    background-color: #333;
+    color: white;
+}
